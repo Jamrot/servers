@@ -101,11 +101,11 @@ For NPX installation:
   "mcp": {
     "servers": {
       "sequential-thinking": {
-        "command": "npx",
+        "command": "bash",
         "args": [
-          "-y",
-          "@modelcontextprotocol/server-sequential-thinking"
-        ]
+          "-c",
+          "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+      ]
       }
     }
   }
