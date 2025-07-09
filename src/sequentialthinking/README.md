@@ -94,7 +94,7 @@ Optionally, you can add it to a file called `.vscode/mcp.json` in your workspace
 
 > Note that the `mcp` key is not needed in the `.vscode/mcp.json` file.
 
-For NPX installation:
+For NPX installation (Recommended):
 
 ```json
 {
