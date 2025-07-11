@@ -62,6 +62,26 @@ Add this to your `claude_desktop_config.json`:
 To disable logging of thought information set env var: `DISABLE_THOUGHT_LOGGING` to `true`.
 Comment
 
+### Usage with Copilot in Pycharm
+
+For manual installation, add the following JSON block to `~/.config/github-copilot/intellij/mcp.json`.
+
+```json
+{
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "bash",
+            "args": [
+              "-c",
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        }
+    }
+}
+```
+
 ### Usage with VS Code
 
 For quick installation, click one of the installation buttons below...
@@ -95,26 +115,6 @@ For NPX installation:
 ### Usage with Trae
 
 For manual installation, add the following JSON block to `.trae/mcp.json` in your workspace. And then copy this file to ~/Library/Application Support/Trae CN/User/mcp.json to instead the old mcp.json by terminal.
-
-```json
-{
-    "mcpServers": {
-        "Sequential Thinking": {
-            "command": "bash",
-            "args": [
-              "-c",
-              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
-          ],
-            "env": {},
-            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
-        }
-    }
-}
-```
-
-### Usage with Copilot in Pycharm
-
-For manual installation, add the following JSON block to `~/.config/github-copilot/intellij/mcp.json`.
 
 ```json
 {
