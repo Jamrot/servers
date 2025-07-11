@@ -68,7 +68,7 @@ For manual installation, add the following JSON block to `~/.config/github-copil
 
 ```json
 {
-    "mcpServers": {
+    "servers": {
         "Sequential Thinking": {
             "command": "bash",
             "args": [
