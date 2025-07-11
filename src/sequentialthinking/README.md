@@ -92,6 +92,26 @@ For NPX installation:
 }
 ```
 
+### Usage with Trae
+
+For manual installation, add the following JSON block to `.trae/mcp.json` in your workspace. And then copy this file to ~/Library/Application Support/Trae CN/User/mcp.json to instead the old mcp.json by terminal.
+
+```json
+{
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "bash",
+            "args": [
+              "-c",
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        }
+    }
+}
+```
+
 ## License
 
 This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
