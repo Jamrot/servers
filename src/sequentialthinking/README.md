@@ -39,6 +39,24 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
+### Usage with Zed
+
+For manual installation, add the following JSON block to `~/.config/zed/settings.json` in your workspace.
+
+```json
+    "context_servers": {
+        "Sequential Thinking": {
+            "command": "bash",
+            "args": [
+              "-c",
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        }
+    }
+```
+
 ### Usage with Claude Desktop
 
 Add this to your `claude_desktop_config.json`:
