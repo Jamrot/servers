@@ -39,6 +39,26 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
+### Usage with Cline
+
+Add this to your `cline_mcp_settings.json`:
+
+#### npx
+
+```json
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+      ]
+    }
+  }
+}
+```
+
 ### Usage with Zed
 
 For manual installation, add the following JSON block to `.zed/settings.json` in your workspace.
@@ -104,10 +124,6 @@ For manual installation, add the following JSON block to `~/.config/github-copil
 ```
 
 ### Usage with VS Code
-
-For quick installation, click one of the installation buttons below...
-
-[![Install with NPX in VS Code](https://img.shields.io/badge/VS_Code-NPM-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=sequentialthinking&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40modelcontextprotocol%2Fserver-sequential-thinking%22%5D%7D) [![Install with NPX in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-NPM-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=sequentialthinking&config=%7B%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22%40modelcontextprotocol%2Fserver-sequential-thinking%22%5D%7D&quality=insiders)
 
 For manual installation, add the following JSON block to your User Settings (JSON) file in VS Code. You can do this by pressing `Ctrl + Shift + P` and typing `Preferences: Open Settings (JSON)`.
 
