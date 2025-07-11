@@ -47,6 +47,7 @@ For manual installation, add the following JSON block to `.zed/settings.json` in
 {
     "context_servers": {
         "Sequential Thinking": {
+            "source": "custom",
             "command": "bash",
             "args": [
               "-c",
