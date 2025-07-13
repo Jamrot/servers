@@ -41,7 +41,7 @@ The Sequential Thinking tool is designed for:
 
 ### Usage with Cline
 
-To use the remote service,add this to your `cline_mcp_settings.json`:
+Add this to your `cline_mcp_settings.json`:
 
 #### npx
 
