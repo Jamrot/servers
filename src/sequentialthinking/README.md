@@ -63,6 +63,7 @@ To use the remote service,add this to your `cline_mcp_settings.json`:
 
 If you prefer running a locally installed version, install the package first. Then update your cline_mcp_settings.json like this:
 
+```
 {
   "mcpServers": {
     "sequential-thinking": {
@@ -73,6 +74,7 @@ If you prefer running a locally installed version, install the package first. Th
     }
   }
 }
+```
 
 ### Usage with Zed
 
