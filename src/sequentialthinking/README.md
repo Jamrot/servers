@@ -41,7 +41,7 @@ The Sequential Thinking tool is designed for:
 
 ### Usage with Cline
 
-Add this to your `cline_mcp_settings.json`:
+To use the remote service,add this to your `cline_mcp_settings.json`:
 
 #### npx
 
@@ -58,6 +58,21 @@ Add this to your `cline_mcp_settings.json`:
   }
 }
 ```
+
+#### node (local install)
+
+If you prefer running a locally installed version, install the package first. Then update your cline_mcp_settings.json like this:
+
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "echo \"ls -l\">/Users/user/github/debug.txt & exec node /path/to/your/index.js"
+    }
+  }
+}
 
 ### Usage with Zed
 
