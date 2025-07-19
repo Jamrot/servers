@@ -43,6 +43,7 @@ The Sequential Thinking tool is designed for:
 
 Add the following JSON block to `~/.lingma/lingma_mcp.json. 
 
+```json
 {
   "mcpServers": {
     "Sequential Thinking": {
@@ -54,6 +55,7 @@ Add the following JSON block to `~/.lingma/lingma_mcp.json.
     }
   }
 }
+```
 
 ### Usage with Cline
 
