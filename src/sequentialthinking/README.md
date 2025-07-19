@@ -41,11 +41,12 @@ The Sequential Thinking tool is designed for:
 
 ### Usage with Lingma
 
-Add the following JSON block to `~/.lingma/lingma_mcp.json. 
+Add the following JSON block to `~/Library/Application Support/Lingma/User/settings.json. 
 
 ```json
 {
-  "mcpServers": {
+  "mcp": {
+  "servers":{
     "Sequential Thinking": {
       "command": "bash",
       "args": [
@@ -54,6 +55,7 @@ Add the following JSON block to `~/.lingma/lingma_mcp.json.
       ]
     }
   }
+}
 }
 ```
 
