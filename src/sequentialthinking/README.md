@@ -41,7 +41,7 @@ The Sequential Thinking tool is designed for:
 
 ### Usage with Augment in Pycharm
 
-Add the following block to `~/Library/Application Support/JetBrains/PyCharm2025.1/options/AugmentIntegrations.xml`: 
+Update `~/Library/Application Support/JetBrains/PyCharm2025.1/options/AugmentIntegrations.xml` with the following block: 
 ```
 <application>
   <component name="AugmentIntegrations">
