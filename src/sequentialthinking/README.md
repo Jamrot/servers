@@ -49,7 +49,6 @@ Add the following block to `~/Library/Application Support/JetBrains/PyCharm2025.
   </component>
 </application>
 ```
-Notice that you should use the existing mcp server id in `~/Library/Application Support/JetBrains/PyCharm2025.1/options/AugmentIntegrations.xml`.
 
 ### Usage with Lingma
 
