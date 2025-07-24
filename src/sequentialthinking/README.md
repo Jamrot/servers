@@ -45,7 +45,7 @@ Add the following JSON block to `~/.codeium/windsurf/mcp_config.json`.
 
 ```json
 {
-    "servers": {
+    "MCPServers": {
         "Sequential Thinking": {
             "command": "bash",
             "args": [
