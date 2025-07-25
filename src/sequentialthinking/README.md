@@ -50,7 +50,7 @@ Add this to `.vscode/mcp.json` in your workspace:
         "command": "bash",
         "args": [
           "-c",
-          "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          "exec npx -y @modelcontextprotocol/server-sequential-thinking"
       ]
       }
     }
