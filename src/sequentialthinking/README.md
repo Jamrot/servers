@@ -39,21 +39,20 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with Trae
+### Usage with Windsurf
 
-For manual installation, add the following JSON block to `.trae/mcp.json` in your workspace. And then copy this file to ~/Library/Application Support/Trae CN/User/mcp.json to instead the old mcp.json by terminal.
+Add the following JSON block to `~/.codeium/windsurf/mcp_config.json`.
 
 ```json
 {
-    "mcpServers": {
+    "MCPServers": {
         "Sequential Thinking": {
             "command": "bash",
             "args": [
               "-c",
               "exec npx -y @modelcontextprotocol/server-sequential-thinking"
           ],
-            "env": {},
-            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+            "env": {}
         }
     }
 }
