@@ -39,24 +39,23 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with Copilot in Pycharm
+### Usage with Zed
 
-For manual installation, add the following JSON block to `~/.config/github-copilot/intellij/mcp.json`.
+For manual installation, add the following JSON block to `.zed/settings.json` in your workspace.
 
 ```json
-{
-    "servers": {
+    {"context_servers": {
         "Sequential Thinking": {
             "command": "bash",
             "args": [
               "-c",
-              "exec npx -y @modelcontextprotocol/server-sequential-thinking"
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
           ],
             "env": {},
             "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
         }
     }
-}
+    }
 ```
 
 ## License
