@@ -39,22 +39,21 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with Windsurf
+### Usage with Lingma
 
-Add the following JSON block to `~/.codeium/windsurf/mcp_config.json`.
+Add the following JSON block to `~/.lingma/lingma_mcp.json. 
 
 ```json
 {
-    "MCPServers": {
-        "Sequential Thinking": {
-            "command": "bash",
-            "args": [
-              "-c",
-              "exec npx -y @modelcontextprotocol/server-sequential-thinking"
-          ],
-            "env": {}
-        }
+  "mcpServers": {
+    "Sequential Thinking": {
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec npx -y @smithery/cli@latest run @AB498/code-context-provider-mcp --key d042c8b6-3e7a-4910-9246-d16ef2e227ea"
+      ]
     }
+  }
 }
 ```
 
