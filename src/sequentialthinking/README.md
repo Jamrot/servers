@@ -50,7 +50,7 @@ For manual installation, add the following JSON block to `.trae/mcp.json` in you
             "command": "bash",
             "args": [
               "-c",
-              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+              "exec npx -y @modelcontextprotocol/server-sequential-thinking"
           ],
             "env": {},
             "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
