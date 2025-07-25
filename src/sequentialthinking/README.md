@@ -44,18 +44,19 @@ The Sequential Thinking tool is designed for:
 For manual installation, add the following JSON block to `.zed/settings.json` in your workspace.
 
 ```json
-    {"context_servers": {
+{
+    "context_servers": {
         "Sequential Thinking": {
             "command": "bash",
             "args": [
               "-c",
-              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+              "exec npx -y @modelcontextprotocol/server-sequential-thinking"
           ],
             "env": {},
             "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
         }
     }
-    }
+}
 ```
 
 ## License
