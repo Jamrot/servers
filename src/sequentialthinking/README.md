@@ -39,19 +39,21 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with Cline
+### Usage with VS Code
 
-Add this to `~/Library/Application Support/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`:
+Add this to `.vscode/mcp.json` in your workspace:
 
 ```json
 {
-  "mcpServers": {
-    "sequential-thinking": {
-      "command": "bash",
-      "args": [
-        "-c",
-        "exec npx -y @modelcontextprotocol/server-sequential-thinking"
+  "mcp": {
+    "servers": {
+      "sequential-thinking": {
+        "command": "bash",
+        "args": [
+          "-c",
+          "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
       ]
+      }
     }
   }
 }
