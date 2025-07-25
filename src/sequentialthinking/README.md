@@ -39,21 +39,23 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with Lingma
+### Usage with Copilot in Pycharm
 
-Add the following JSON block to `~/.lingma/lingma_mcp.json. 
+For manual installation, add the following JSON block to `~/.config/github-copilot/intellij/mcp.json`.
 
 ```json
 {
-  "mcpServers": {
-    "Sequential Thinking": {
-      "command": "bash",
-      "args": [
-        "-c",
-        "exec npx -y @smithery/cli@latest run @AB498/code-context-provider-mcp --key d042c8b6-3e7a-4910-9246-d16ef2e227ea"
-      ]
+    "servers": {
+        "Sequential Thinking": {
+            "command": "bash",
+            "args": [
+              "-c",
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        }
     }
-  }
 }
 ```
 
