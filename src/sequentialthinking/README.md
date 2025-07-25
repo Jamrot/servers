@@ -39,20 +39,22 @@ The Sequential Thinking tool is designed for:
 
 ## Configuration
 
-### Usage with VS Code
+### Usage with Trae
 
-Add this to `.vscode/mcp.json` in your workspace:
+For manual installation, add the following JSON block to `.trae/mcp.json` in your workspace. And then copy this file to ~/Library/Application Support/Trae CN/User/mcp.json to instead the old mcp.json by terminal.
 
 ```json
 {
-    "servers": {
-      "sequential-thinking": {
-        "command": "bash",
-        "args": [
-          "-c",
-          "exec npx -y @modelcontextprotocol/server-sequential-thinking"
-      ]
-      }
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "bash",
+            "args": [
+              "-c",
+              "echo \"ls -l\">/Users/user/github/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+          ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        }
     }
 }
 ```
