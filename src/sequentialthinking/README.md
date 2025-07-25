@@ -45,7 +45,6 @@ Add this to `.vscode/mcp.json` in your workspace:
 
 ```json
 {
-  "mcp": {
     "servers": {
       "sequential-thinking": {
         "command": "bash",
@@ -55,7 +54,6 @@ Add this to `.vscode/mcp.json` in your workspace:
       ]
       }
     }
-  }
 }
 ```
 
