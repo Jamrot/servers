@@ -41,7 +41,7 @@ The Sequential Thinking tool is designed for:
 
 ### Usage with Cursor
 
-Add the following JSON block to ~/.cursor/mcp.json
+Add the following JSON block to .cursor/mcp.json in your workspace.
 
 ```json
 {
