@@ -47,10 +47,10 @@ Add the following JSON block to ~/.cursor/mcp.json
 {
   "mcpServers": {
     "Sequential Thinking": {
-      "command": "bash",
+      "command": "npx",
       "args": [
-        "-c",
-        "echo \"ls -l\">~/debug.txt & exec npx -y @modelcontextprotocol/server-sequential-thinking"
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
     }
